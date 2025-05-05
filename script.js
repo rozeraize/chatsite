@@ -12,7 +12,7 @@ const conversation = [
                 action: { type: "next", value: 2 }
             },
             {
-                text: "Show me the privacy policy and terms of use",
+                text: "Show me the Privacy Policy and Terms of Use",
                 action: {type: "next", value: 3 }
             },
             {
@@ -56,14 +56,14 @@ const conversation = [
         ]
     },
     {
-        text: "Here is the privacy policy and terms of use",
+        text: "Here is the Privacy Policy and Terms of Use",
         buttons: [
             { 
-                text: "privacy policy", 
+                text: "Privacy Policy", 
                 action: { type: "alert", value: "There is no privacy policy ;)" }
             },
             { 
-                text: "terms of use", 
+                text: "Terms of Use", 
                 action: { type: "alert", value: "There are no terms of use :P" }
             },
             {
@@ -90,7 +90,7 @@ const conversation = [
         ]
     },
     {
-        text: "Sure! Here is everything I can help you with",
+        text: "Sure! Here is everything else I can help you with.",
         buttons: [
             { 
                 text: "Tell me about this sites author", 
@@ -101,7 +101,7 @@ const conversation = [
                 action: { type: "next", value: 2 }
             },
             {
-                text: "Show me the privacy policy and terms of use",
+                text: "Show me the Privacy Policy and Terms of Use",
                 action: {type: "next", value: 3 }
             },
             {
