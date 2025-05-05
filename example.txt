@@ -1,0 +1,4 @@
+{
+    text: "Button Label",
+    action: { type: "next|link|alert", value: "corresponding value"}
+}
