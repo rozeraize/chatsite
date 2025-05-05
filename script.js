@@ -35,7 +35,7 @@ const conversation = [
         ]
     },
     {
-        text: "Here are some of the authors projects",
+        text: "Here are some of the authors projects.",
         buttons: [
             { 
                 text: "A windows95-like desktop", 
@@ -56,7 +56,7 @@ const conversation = [
         ]
     },
     {
-        text: "Here is the Privacy Policy and Terms of Use",
+        text: "Here is the Privacy Policy and Terms of Use.",
         buttons: [
             { 
                 text: "Privacy Policy", 
@@ -73,7 +73,7 @@ const conversation = [
         ]
     },
     {
-        text: "Here are some external links",
+        text: "Here are some external links.",
         buttons: [
             {
                 text: "The authors other site",
