@@ -1,3 +1,5 @@
+//The following code is an example of the format and structure used to add a button to the script.js file
+
 {
     text: "Button Label",
     action: { type: "next|link|alert", value: "corresponding value"}
