@@ -18,6 +18,10 @@ const conversation = [
             {
                 text: "Show me some external links",
                 action: {type: "next", value: 4}
+            },
+            {
+                text: "Quiz me",
+                action: {type: "next", value: 6 }
             }
         ]
     },
@@ -107,6 +111,31 @@ const conversation = [
             {
                 text: "Show me some external links",
                 action: {type: "next", value: 4}
+            },
+            {
+                text: "Quiz me",
+                action: {type: "next", value: 6 }
+            }
+        ]
+    },
+    {
+        text: "Sure! What would you like me to quiz you on?",
+        buttons: [
+            {
+                text: "Economics",
+                action: {type: "next", value: 7}
+            },
+            {
+                text: "The middle-east",
+                action: {type: "next", value: 8 }
+            },
+            {
+                text: "Slavery",
+                action: {type: "next", value: 9 }
+            },
+            {
+                text: "Opression",
+                action: {type: "next", value: 10 }
             }
         ]
     }
