@@ -142,6 +142,36 @@ const conversation = [
                 action: {type: "next", value: 5}
             }
         ]
+    },
+    {
+        text: "sure! Question 1: Which one of the following was the leading cause of apartment buildings falling into disrepair, apartment shortages, lack of construction, and crime in New York city in the 70's?",
+        buttons: [
+            {
+                text: "Tariffs",
+                action: {type: "alert", value: "Wrong answer! Try again."}
+            },
+            {
+                text: "Rent control",
+                action: {type: "next", value: 11 }
+            }
+        ]
+    },
+    {
+        text: "Which was the only country in the world as of 2024 that you could still purchase slaves from?",
+        buttons: [
+            {
+                text: "The Houthi controlled Yemen",
+                action: {type: "next", value: 12 }
+            },
+            {
+                text: "Isreal",
+                action: {type: "alert",value: "Wrong answer! Try again" }
+            },
+            {
+                text: "Egypt",
+                action: {type: "alert", value: "Wrong answer! Please try again." }
+            }
+        ]
     }
 ];
 
