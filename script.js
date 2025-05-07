@@ -157,7 +157,7 @@ function typeText(text, callback) {
         if (index < text.length) {
             textContent.textContent += text[index];
             index++;
-            setTimeout(type, 75); // Adjust typing speed here
+            setTimeout(type, 35); // Adjust typing speed here
         } else {
             if (callback) callback();
         }
