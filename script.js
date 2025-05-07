@@ -136,6 +136,10 @@ const conversation = [
             {
                 text: "Opression",
                 action: {type: "next", value: 10 }
+            },
+            {
+                text: "Never mind, what else could you do?",
+                action: {type: "next", value: 5}
             }
         ]
     }
