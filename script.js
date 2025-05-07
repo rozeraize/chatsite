@@ -157,7 +157,7 @@ const conversation = [
         ]
     },
     {
-        text: "Which was the only country in the world as of 2024 that you could still purchase slaves from?",
+        text: "No problem! Question 1: Which was the only country in the world as of 2024 that you could still purchase slaves from?",
         buttons: [
             {
                 text: "The Houthi controlled Yemen",
