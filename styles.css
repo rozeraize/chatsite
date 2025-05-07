@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.chatbot-icon {
+    width: 60px;
+    height: 60px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.chat-bubble {
+    background-color: #e3f2fd;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 80%;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.chat-bubble::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #e3f2fd;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    display: none;
+}
+
+p.visible {
+    display: block;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+button.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@keyframes blink {
+    0%, 96%, 100% {
+        transform: scaleY(1);
+    }
+    98% {
+        transform: scaleY(0.1);
+    }
+}
+
+.chatbot-icon circle[fill="white"] {
+    transform-origin: center;
+    animation: blink 3s infinite;
+}
+
+/* Offset the second eye animation slightly for a more natural effect */
+.chatbot-icon circle[fill="white"]:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+/* Left-Right Glancing Animation */
+@keyframes glance {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-3px);
+    }
+    75% {
+        transform: translateX(3px);
+    }
+}
+
+/* Eyes group animation */
+.chatbot-icon .eyes {
+    animation: glance 6s infinite ease-in-out;
+}
+
+/* Individual eye animations */
+.chatbot-icon .eye {
+    transform-origin: center;
+    animation: blink 4s infinite;
+}
+
+/* Offset the right eye blink slightly */
+.chatbot-icon .eye.right {
+    animation-delay: 0.1s;
+}
+
+/* Mouth Opening Animation */
+@keyframes speak {
+    0%, 90%, 100% {
+        d: path("M 35 65 Q 50 80 65 65");
+    }
+    95% {
+        d: path("M 35 65 Q 50 70 65 65");
+    }
+}
+
+/* Mouth animation */
+.chatbot-icon .mouth {
+    animation: speak 3.5s infinite ease-in-out;
+}
