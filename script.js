@@ -140,7 +140,7 @@ const conversation = [
         ]
     },
     {
-        text: "sure! Question 1: Which one of the following was the leading cause of apartment buildings falling into disrepair, apartment shortages, lack of construction, and crime in New York city in the 70's?",
+        text: "sure! Question 1: Which one of the following was the leading cause of apartment buildings falling into disrepair, apartment shortages, and crime in New York city in the 70's?",
         buttons: [
             {
                 text: "Tariffs",
