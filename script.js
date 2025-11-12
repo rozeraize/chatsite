@@ -85,11 +85,11 @@ const conversation = [
         buttons: [
             {
                 text: "The authors other site",
-                action: { type: "link", value: "https://rozeraize.github.io/mywebsite/"}
+                action: { type: "link", value: "https://rozeraize.github.io/mywebsite/" }
             },
             {
                 text: "The github repository for this site",
-                action: { type: "link", value: "https://github.com/rozeraize/chatsite"}
+                action: { type: "link", value: "https://github.com/rozeraize/chatsite" }
             },
             {
                 text: "Show me what else you can help me with", 
@@ -191,11 +191,11 @@ const conversation = [
             },
             {
                 text: "31",
-                action {type: "alert", value: "The answer isn't 31 you fool!"}
+                action: {type: "alert", value: "The answer isn't 31 you fool!"}
             },
             {
                 text: "I don't know. I give up.",
-                action {type: "next", value: 11 }
+                action: {type: "next", value: 11 }
             }
         ]
     },
