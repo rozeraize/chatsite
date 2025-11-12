@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <svg class="chatbot-icon" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#4a90e2"/>
+            <!-- Group the eyes for animation -->
+            <g class="eyes">
+                <circle cx="35" cy="40" r="5" fill="white" class="eye left"/>
+                <circle cx="65" cy="40" r="5" fill="white" class="eye right"/>
+            </g>
+            <!-- Add class to mouth path for animation -->
+            <path class="mouth" d="M 35 65 Q 50 80 65 65" stroke="white" fill="transparent" stroke-width="3"/>
+        </svg>
+    </header>
+    <main>
+        <div class="chat-bubble">
+            <p id="text-content" class="visible"></p>
+            <div id="button-container">
+                <!-- Buttons will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
