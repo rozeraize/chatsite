@@ -26,7 +26,7 @@ const conversation = [
         ]
     },
     {
-        text: `Sorry, but due to privacy concerns I cannot tell you about the author of this site. Is there anything else I can help you with instead?`,
+        text: "Sorry, but due to privacy concerns I cannot tell you about the author of this site. Is there anything else I can help you with instead?",
         buttons: [
             { 
                 text: "Tell me the time", 
